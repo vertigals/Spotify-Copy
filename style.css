@@ -1,0 +1,576 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+body {
+    background-color: #121212;
+    font-family: sans-serif;
+} 
+
+.sidebar {
+    position: fixed;
+    width: 21vh;
+    background-color: #000000;
+    padding: 30px;
+    
+    color: white;
+  }
+
+.sidebar .logo img {
+    width: 100px;
+  }
+
+.home a:hover span {
+    color: white;
+}
+
+.home a span {
+  color: #9e8888; 
+  transition: color 0.3s;
+}
+
+.home a:hover span {
+  color: white; 
+}
+.library  a span {
+  color: #9e8888; 
+  transition: color 0.3s;
+}
+.library  a:hover span {
+  color: white;
+}
+
+
+.sidebar .home ul {
+    list-style: none; 
+    margin-top: 10px;         /* spustio malo dole */
+    
+    
+}
+.sidebar .home ul li {
+    padding: 5px 0px;               /* razdvojio gornji i donji element */
+  }
+
+  .sidebar .home ul li a {                /* fali ikonica */
+    color: #9e8888;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+.library .lib ul {
+list-style: none;
+    
+}
+.library .lib ul li {
+    padding: 30px 0px;
+        
+}
+.library .lib ul li a {              /* fali ikonica  i plusic */
+    color: #9e8888;
+    text-decoration: none;
+    font-size: 20px;
+  }  
+
+.library-1 {
+    width: 24vh;
+    height: 15vh;
+    background-color: rgb(32, 32, 32);
+    border-radius: 6px;
+    margin-left: -11px; /*nevjerovatno glup nacin da se ovo uradi al hajd nek stoji za sad*/
+} 
+.library-1 h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    display: flex;
+    padding-top: 20px;
+    margin-left: 15px;   
+}
+.library-1 p {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    padding-top: 13px;
+    margin-left: 15px;   
+}
+
+.library-2 {
+    width: 24vh;
+    height: 19vh;
+    margin-top: 50px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 6px;
+    margin-left: -11px; /*nevjerovatno glup nacin da se ovo uradi al hajd nek stoji za sad*/
+} 
+.library-2 h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    display: flex;
+    padding-top: 20px;
+    margin-left: 15px;   
+}
+.library-2 p {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    padding-top: 13px;
+    margin-left: 15px;   
+}
+
+.sidebar .privacy {
+    margin-top: 13vh;
+    
+}
+
+.sidebar .privacy p {
+    margin:0 0 10px 0;
+    color: #9e8888;
+    font-size: 12px;
+    
+};
+  
+.library-1 .create-playlist{
+    margin-top: 20px;
+    /*ovaj ovdje dio nema apsolutno svrhu al bez njeg ovaj dole ispod ne radi i nemam pojma zasto*/
+}
+.library  button {
+    margin-top: 20px ;
+    margin-left: 20px;
+    border:1px solid white;
+    display: flex;
+    justify-content: center;
+    transition: 0.5;
+    align-items: center;
+    border-color: rgb(255, 255, 255);
+    border-radius: 26px;
+    background-color: white;
+    font-weight: bold;
+    color:black;
+    padding-left:10px ;
+    padding-right:10px ;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    transition: background-color 0.7s;
+}
+.library button:hover {
+  
+  transform: scale(1.05);
+  
+}
+
+
+.library .library-2 .browse {
+    margin-top: 20px ;
+    margin-left: 20px;
+    border:1px solid white;
+    display: flex;
+    justify-content: center;
+    transition: 0.5;
+    align-items: center;
+    border-color: rgb(255, 255, 255);
+    border-radius: 26px;
+    background-color: white;
+    font-weight: bold;
+    color:black;
+    padding-left:10px ;
+    padding-right:10px ;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    transition: background-color 0.7s; 
+}
+
+.library .btn {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: rgb(255, 255, 255);
+  border-radius: 17px;
+  background-color: #000000;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 8px 14px; 
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 14px;
+  margin-left: 15px;
+  transition: background-color 0.7s; 
+  
+
+}
+.library .btn:hover {
+  
+  transform: scale(1.05);
+  
+}
+
+
+.login {
+    display: flex;
+    align-items: center;
+}
+.login ul {
+    list-style: none;
+    
+    
+}
+.login ul li {
+display: inline-block;
+margin: 0px 8px;
+width: 70px;
+}
+.login ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+.privacy {
+  transition: 0.3s;
+}
+.privacy  p span:hover{
+  text-decoration: underline;
+}
+
+
+.topbar {
+    display: flex;
+    justify-content:space-between;
+    background-color: #000000;
+    padding: 14px 60px;
+  }
+  
+.main-container {
+    margin-left: 245px;
+    
+  
+}
+
+.main-container .topbar .l-r-buttons button {
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: rgb(24, 24, 24);
+  margin-top: 7px;
+  margin-right: 10px;
+  
+}
+
+
+.login a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  
+}
+
+.login a:hover {
+  color: rgb(255, 255, 255);
+  
+}
+.main-container .topbar .login .log {  /* copy paste odozgo lmao, pola ne radi*/ 
+    border:1px solid white;
+    display: flex;
+    justify-content: center;
+    transition: 0.5;
+    align-items: center;
+    border-color: rgb(255, 255, 255);
+    border-radius: 26px;
+    background-color: white;
+    font-weight: bold;
+    color:black;
+    padding-left:26px ;
+    padding-right:26px ;
+    padding-top:12px ;
+    padding-bottom:12px ; 
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.7s; 
+}
+.main-container button:hover {
+  transform: scale(1.05);
+}
+
+.preview {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ac2a94, #4b97f5);
+    
+}
+
+.preview h4  {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+    
+}
+
+
+.preview p  {
+    color: rgb(202, 199, 199);
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.preview .preview-button {
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+     padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px;
+    border-radius: 35px; 
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition: background-color 0.7s;
+}
+.preview button:hover{
+  transform: scale(1.05);
+}
+
+/* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 */
+
+.show-more {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.show-more h2 {
+    margin: 0;
+    
+}
+.show-more a {
+    margin: 0;
+    color: #aca0a0;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.show-more ul  {
+  list-style: none;
+}
+.albums .playlists .show-more ul li a {
+  text-decoration: none;
+}
+
+.albums {
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.albums p{
+  color: #9e8888;
+}
+
+.playlists {
+    padding: 20px 40px;
+    color: white;
+    margin-left: 13%;
+    
+  }
+.playlists h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+    color: white;
+  }
+.playlists h2:hover {
+ 
+  text-decoration: underline;  
+  color: white; 
+}
+.playlists .show-more a:hover{
+   
+  color: white; 
+}
+
+.playlists .list {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+
+  }
+
+.playlists .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+.playlists .list .item .play {
+    position: relative;
+  }
+.playlists .list .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+.playlists .list .item:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+
+
+
+
+.playlists .list .item {
+    min-width: 140px; /* 140 */
+    width: 160px; /* 160    */
+    padding: 10px; /* 15  */
+    background-color: #181818;
+    border-radius: 8px;
+    transition: all ease 0.4s;
+  }
+.playlists .list .item:hover {
+    background-color: #252525;
+  }
+.playlists .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+  }
+
+.playlists .list {
+    gap: 20px; /* 15px*/
+}
+
+.list .item {
+    min-width: 120px;
+    width: 140px;
+    padding: 10px;
+    background-color: #181818;
+    border-radius: 8px;
+    transition: all ease 0.4s;
+  }
+.list .item:hover {
+    background-color: #252525;
+  }
+.list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    
+  }
+
+  
+
+
+
+ 
+
+  /* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 *//* 140 */
+
+.flex-container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    display: flex;
+    margin-top: 5%;
+    
+}
+.flex-container .social-buttons {
+  margin-left: auto;
+  margin-top: 3vh;
+}
+
+.liste {
+    margin: 20px;
+    padding: 20px; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+
+.flex-container ul li a {            
+  color: #9e8888;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.liste a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+
+.flex-container .social-buttons button {
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  font-size: 15px;
+  border: 0px;
+  background-color: rgb(102, 100, 100);
+  overflow: hidden;
+  margin-right: 7px;
+  
+  
+  
+  
+}
+.flex-container .liste a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+.flex-container .social-buttons img {
+width: 100%;
+height: 100%;
+object-fit: cover;  
+}
+
+.flex-container button:hover {
+  filter: brightness(1.2);
+}
+
+.tekst p{
+  margin-top: 3vh;
+}
